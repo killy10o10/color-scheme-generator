@@ -9,11 +9,12 @@ form.addEventListener('submit', (e) => {
   const colorPicker = document.getElementById('color-picker').value;
   const colorPickerCode = colorPicker.replace(/[^a-zA-Z0-9 ]/g, '');
 
-  fetch(`${baseURL}/scheme?hex=${colorPickerCode}`)
+  fetch(`${baseURL}/scheme?hex=${colorPickerCode}&mode=${colorScheme.value}`)
     .then((res) => res.json())
     .then((data) => {
       data.colors.map((color, key) => {
         colorBar[key].style.backgroundColor = color.hex.value;
+        colorBar[key].textContent = color.name.value;
         colorCodes.innerHTML += `
       <p class="color-1">${color.hex.value}</p>
       `;

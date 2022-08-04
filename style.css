@@ -88,3 +88,10 @@ form {
   margin: 5px;
   text-align: center;
 }
+
+.color-bar {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  font-style: italic;
+}
