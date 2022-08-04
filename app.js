@@ -16,7 +16,7 @@ form.addEventListener('submit', (e) => {
         colorBar[key].style.backgroundColor = color.hex.value;
         colorBar[key].textContent = color.name.value;
         colorCodes.innerHTML += `
-      <p class="color-1">${color.hex.value}</p>
+      <small><p class="color-1">${color.hex.value}</p></small>
       `;
       });
     });

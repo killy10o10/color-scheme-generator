@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
 *,
 *::after,
 *::before {
@@ -84,12 +85,11 @@ form {
 
 .color-names * {
   text-align: center;
-  font-weight: bold;
 }
 
 .color-bar {
   color: #fff;
-  font-weight: bold;
   text-align: center;
   font-style: italic;
+  font-family: 'Poppins', sans-serif;
 }
