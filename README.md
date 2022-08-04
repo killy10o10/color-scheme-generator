@@ -4,7 +4,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://killy10o10.github.io/note-taker/)
+[Live Demo Link](https://killy10o10.github.io/color-scheme-generator/)
 
 ## Built With
 
