@@ -1,0 +1,89 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font: inherit;
+  border: none;
+  cursor: pointer;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  padding: 8px;
+  border-radius: 5px;
+  white-space: nowrap;
+  transition-property: transform, box-shadow;
+  transition-duration: 0.6s;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+button:active {
+  transform: scale(0.9);
+  box-shadow: 0 3px 5px -2px;
+}
+
+input {
+  border: 1px solid #d1d5db;
+  padding: 1px;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: hsl(var(--bg));
+  background: #f7f8fa;
+}
+
+form {
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.selection {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 8px;
+  background-color: #fff;
+  border: 4px;
+}
+
+#colors {
+  padding: 8px;
+  border: #d1d5db 1px solid;
+  border-radius: 4px;
+  font-family: inherit;
+  background: url('./Icon.svg') no-repeat center right;
+  width: fit-content;
+  -webkit-appearance: none;
+  background-position-x: 140px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.color-container {
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.color-names {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  background-color: #fff;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.color-names * {
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Color Scheme Generator</title>
+</head>
+
+<body>
+  <h1>Choose A Color</h1>
+  <div class="container">
+    <form>
+      <div class="selection">
+        <input type="color" name="colopicker" id="hex" />
+        <select name="colors" id="colors">
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-dark">Monochrome-dark</option>
+          <option value="monochrome-light">Monochrome-light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complemment</option>
+          <option value="analogic-complement">Analogic-Complemment</option>
+          <option value="triad">Triad</option>
+        </select>
+        <button type="submit">Get color scheme</button>
+      </div>
+      <div class="color-container">
+        <div class="color-bar color-1"></div>
+        <div class="color-bar color-2"></div>
+        <div class="color-bar color-3"></div>
+        <div class="color-bar color-4"></div>
+        <div class="color-bar color-5"></div>
+      </div>
+      <div class="color-names"></div>
+    </form>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
