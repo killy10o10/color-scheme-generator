@@ -43,6 +43,7 @@ body {
 form {
   padding: 10px;
   border-radius: 4px;
+  transition: all 250ms ease-in-out;
 }
 
 .selection {
