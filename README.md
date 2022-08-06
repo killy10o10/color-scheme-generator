@@ -2,6 +2,8 @@
 
 > An Api based web app to select color schemes from https://www.thecolorapi.com
 
+![Screenshot](screenshot.png)
+
 ## Live Demo
 
 [Live Demo Link](https://killy10o10.github.io/color-scheme-generator/)
